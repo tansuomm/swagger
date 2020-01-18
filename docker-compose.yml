@@ -1,0 +1,14 @@
+version: '3'
+services:
+  swagger-editor:
+    restart: always
+    image: swaggerapi/swagger-editor
+    container_name: swagger-editor
+    ports:
+      - 8000:8080
+  swagger-ui:
+    restart: always
+    image: swaggerapi/swagger-ui
+    container_name: swagger-ui
+    ports:
+      - 8001:8080
